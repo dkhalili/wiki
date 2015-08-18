@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>WikiSports</title>
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">	
+<style>
+	.header-box {
+	  border: 1px solid #000;
+	  width: 85%;
+	  margin: 5em auto 7em;
+	  display:inline-block;
+	}
+	body {
+		text-align: center;
+	}
+	.text {
+		width:500px;
+		height:500px;
+		border: 1px solid black;
+	}
+	.content {
+		margin-left: 80%;
+	}
+
+	</style>
+</head>
+<body>
+
+
+	<div class="container">
+	<div class="pure-g wrapper">
+
+		<header class="pure-u-1">
+			<div class="header-box">
+			<h1>WikiSports</h1>
+			<nav class="pure-menu pure-menu-horizontal pure-u-1">
+				<a href="/wiki" class="pure-menu-link"><p class="pure-menu-item">Home</p></a><a href="/wiki/new" class="pure-menu-link"><p class="pure-menu-item">New</p></a><a href="/wiki/category" class="pure-menu-link"><p class="pure-menu-item">Categories</p></a><a href="/wiki/search" class="pure-menu-link"><p class="pure-menu-item">Search</p></a>
+			</nav>
+			</div>
+		</header>
+
+		<form method="POST" action="/wiki/<%=row.id%>?_method=PUT">
+		<div class="content pure-u-1">
+				
+				</p>Author: ?</p>
+				
+				<p>Category: <%=row.category%></p>
+				
+				
+				<p>Title: <%=row.title%></p>
+
+				<p>Article: </p><br><input type="text" name="text" value="<%=row.article%>" class=" text pure-u-1">
+
+				<p>Date Made: <%=row.date_made%></p>
+				<p>Last Edit: <%=row.date_edit%></p>
+
+				<input type="submit">
+
+			</form>
+
+		</div>
+	</div>
+	</div>
+ 	</div>
+
+ 		<br><br><footer class="pure-u-1">
+		      <p>&copy; 2015</p>
+		</footer>
+
+</body>
+</html>

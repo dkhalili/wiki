@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>WikiSports</title>
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+
+<style>
+	.header-box {
+	  border: 1px solid #000;
+	  width: 85%;
+	  margin: 5em auto 7em;
+	  display:inline-block;
+	}
+	body {
+		text-align: center;
+	}
+	.text {
+		width:500px;
+		height:500px;
+		border: 1px solid black;
+	}
+
+	</style>
+</head>
+
+<body>
+	<div class="container">
+
+
+	<div class="container">
+	<div class="pure-g wrapper">
+
+		<header class="pure-u-1">
+			<div class="header-box">
+			<h1>WikiSports</h1>
+			<nav class="pure-menu pure-menu-horizontal pure-u-1">
+				<a href="/wiki" class="pure-menu-link"><p class="pure-menu-item">Home</p></a><a href="/wiki/new" class="pure-menu-link"><p class="pure-menu-item">New</p></a><a href="/wiki/category" class="pure-menu-link"><p class="pure-menu-item">Categories</p></a><a href="/wiki/search" class="pure-menu-link"><p class="pure-menu-item">Search</p></a>
+			</nav>
+			</div>
+		</header>
+
+		<div class="content pure-u-1">
+			<form method="POST" action="/wiki">
+				Author: <input type="text" name="author">
+				
+				Category: <select name="category">
+					
+					<option value="other">Other</option>
+					<option value="baseball">Baseball</option>
+					<option value="basketball">Basketball</option>
+					<option value="boxing">Boxing</option>
+					<option value="football">Football</option>
+					<option value="golf">Golf</option>
+					<option value="lacrosse">Lacrosse</option>
+					<option value="running">Running</option>
+					<option value="soccer">Soccer</option>
+					<option value="swimming">Swimming</option>
+					<option value="tennis">Tennis</option>
+					<option value="ufc">UFC</option>
+					<option value="volleyball">Volleyball</option>
+					
+				</select>
+				
+				Email: <input type="text" name="email">
+				
+				Title: <input type="text" name="title">
+				<input type="text" name="article" class="text pure-u-1"><br>
+				
+				<input type="submit">
+
+			</form>
+		</div>
+	</div>
+	</div>
+	 </div>
+		<br><br><footer class="pure-u-1">
+		      <p>&copy; 2015</p>
+		</footer>
+</body>
+</html>

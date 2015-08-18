@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>WikiSports</title>
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+
+<style>
+	.header-box {
+	  border: 1px solid #000;
+	  width: 85%;
+	  margin: 5em auto 7em;
+	  display:inline-block;
+	}
+	body {
+		text-align: center;
+	}
+	</style>
+
+</head>
+<body>
+	<div class="container">
+
+
+		<div class="container">
+	<div class="pure-g wrapper">
+
+		<header class="pure-u-1">
+			<div class="header-box">
+			<h1>WikiSports</h1>
+			<nav class="pure-menu pure-menu-horizontal pure-u-1">
+				<a href="/wiki" class="pure-menu-link"><p class="pure-menu-item">Home</p></a><a href="/wiki/new" class="pure-menu-link"><p class="pure-menu-item">New</p></a><a href="/wiki/category" class="pure-menu-link"><p class="pure-menu-item">Categories</p></a><a href="/wiki/search" class="pure-menu-link"><p class="pure-menu-item">Search</p></a>
+			</nav>
+			</div>
+		</header>
+
+
+		<div class="content pure-u-1">
+
+			<h1><%=rows[0].category%></h1>
+			<%rows.forEach(function(element) {%>
+			<a href="/wiki/<%=element.id%>"><p><%=element.title%></p>
+			<p>By : <%=element.first_name + " " + element.last_name%></p>
+			<p><%=element.date_made%></p></a>
+			<%}) %>
+
+		</div>
+	</div>
+			<br><br><footer class="pure-u-1">
+		      <p>&copy; 2015</p>
+		</footer>
+	</div>
+ 	</div>
+
+
+</body>
+</html>
