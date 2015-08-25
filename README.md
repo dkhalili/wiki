@@ -13,10 +13,12 @@ Any user can then access the article through various methods including: search b
 
 A user can edit the posted article and save the edited version
 
+###Wireframes & Routes
+![Alt text](./Screen Shot 2015-08-25 at 1.34.50 PM.png)
 
-[Wireframe & Routes](https://github.com/dkhalili/wiki/blob/master/dbGrid.html)
 
-[Database Grid](https://github.com/dkhalili/wiki/blob/master/dbGrid.html)
+###Database Grid
+![Alt text](./Screen Shot 2015-08-25 at 1.35.28 PM.png)
 
 
 
